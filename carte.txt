@@ -1,12 +1,37 @@
 #  ================================================================
-#   CARTE ET HORAIRES DE SAM CUISINE
+#   TOUT LE CONTENU MODIFIABLE DU SITE DE SAM CUISINE
 #  ================================================================
 #
 #   Pour changer quelque chose : modifiez le texte, puis cliquez sur
 #   « Commit changes ». Le site se met à jour tout seul en quelques minutes.
 #
 #   Comment ça marche :
-#     == Burgers                      → un onglet de la carte
+#     #  ================================================================
+#   INFOS DU SITE   (nom : texte)   — changez seulement ce qui est après les deux-points
+#   Pour une liste, séparez par des virgules.
+#  ================================================================
+
+== INFOS
+# Message en haut du site (fermeture exceptionnelle, promo…). Laissez vide pour ne rien afficher.
+annonce:
+telephone: 07 68 63 48 20
+accroche: Burgers et assiettes XXL au poulet pané maison. Livraison gratuite midi et soir.
+bandeau: Livraison gratuite midi et soir, Poulet pané maison, Le Muy, 07 68 63 48 20
+note_google: 4,8
+avis_google: 362
+abonnes_instagram: 107 k
+livraison_texte: Un coup de fil, et c'est chez vous, tout chaud. Commandes de 11h30 à 14h et de 18h à 22h.
+livraison_sans_minimum: Le Muy, La Motte
+livraison_minimum_titre: Dès 30 € de commande
+livraison_avec_minimum: Roquebrune, La Bouverie, Les Arcs, Puget-sur-Argens, Route de Trans, Route de Sainte-Maxime, Route de Callas
+paiement: Carte bancaire, espèces et tickets restaurant papier (la monnaie n'est pas rendue sur les tickets ; les cartes restaurant ne passent pas).
+
+
+#  ================================================================
+#   LA CARTE
+#  ================================================================
+
+== Burgers                      → un onglet de la carte
 #     -- Hors carte | les nouveautés  → un bloc (le petit texte après | est facultatif)
 #        ajoutez  | photo=img/hors.webp  pour mettre une photo en haut du bloc
 #     Sam Vegas | 12,50 € | description | nouveau

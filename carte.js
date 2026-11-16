@@ -9,17 +9,51 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
+  function key(s) {
+    return String(s).trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+  }
+  function list(v) { return String(v || '').split(',').map(function (x) { return x.trim(); }).filter(Boolean); }
+  function telHref(v) {
+    var d = String(v).replace(/[^\d+]/g, '');
+    if (/^0\d{9}$/.test(d)) d = '+33' + d.slice(1);
+    return /^\+?\d{6,15}$/.test(d) ? 'tel:' + d : null;
+  }
+  function applyInfos(inf) {
+    if (typeof document === 'undefined') return;
+    Object.keys(inf).forEach(function (k) {
+      var v = inf[k];
+      [].forEach.call(document.querySelectorAll('[data-i="' + k + '"]'), function (el) { el.textContent = v; });
+      [].forEach.call(document.querySelectorAll('[data-list="' + k + '"]'), function (el) {
+        var items = list(v);
+        if (!items.length) return;
+        if (el.tagName === 'UL') el.innerHTML = items.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
+        else { var once = items.map(function (x) { return '<span>' + esc(x) + '</span><i>\u2726</i>'; }).join(''); el.innerHTML = once + once; }
+      });
+    });
+    if (inf.telephone) {
+      var href = telHref(inf.telephone);
+      if (href) [].forEach.call(document.querySelectorAll('a[href^="tel:"]'), function (a) { a.setAttribute('href', href); });
+    }
+    var an = document.getElementById('annonce');
+    if (an) an.hidden = !(inf.annonce && inf.annonce.trim());
+  }
   function photoOk(p) { return /^img\/[a-z0-9_-]+\.(webp|jpe?g|png)$/i.test(p); }
 
   function parse(text) {
-    var tabs = [], hours = [], tab = null, card = null, inHours = false;
+    var tabs = [], hours = [], infos = {}, tab = null, card = null, inHours = false, inInfos = false;
     String(text).replace(/\r/g, '').split('\n').forEach(function (raw) {
       var line = raw.trim();
       if (!line || line.charAt(0) === '#') return;
       if (line.indexOf('==') === 0) {
         var name = line.replace(/^=+/, '').trim();
         inHours = /^horaires$/i.test(name);
-        if (!inHours) { tab = { name: name, cards: [] }; tabs.push(tab); card = null; }
+        inInfos = /^infos$/i.test(name);
+        if (!inHours && !inInfos) { tab = { name: name, cards: [] }; tabs.push(tab); card = null; }
+        return;
+      }
+      if (inInfos) {
+        var k = line.indexOf(':');
+        if (k > 0) infos[key(line.slice(0, k))] = line.slice(k + 1).trim();
         return;
       }
       if (inHours) {
@@ -59,7 +93,7 @@
       }
       card.items.push({ type: 'dish', name: f[0], price: price, desc: f[2] || '', isNew: isNew, qty: qty });
     });
-    return { tabs: tabs, hours: hours };
+    return { tabs: tabs, hours: hours, infos: infos };
   }
 
   function renderCard(c) {
@@ -154,6 +188,7 @@
     var carte = document.getElementById('carte-app'), hours = document.getElementById('hours');
     if (carte && data.tabs.length) { carte.innerHTML = renderCarte(data); initTabs(carte); }
     if (hours && data.hours.length) hours.innerHTML = renderHours(data);
+    applyInfos(data.infos || {});
     updateStatus();
   }
 
