@@ -1,0 +1,134 @@
+#  ================================================================
+#   CARTE ET HORAIRES DE SAM CUISINE
+#  ================================================================
+#
+#   Pour changer quelque chose : modifiez le texte, puis cliquez sur
+#   « Commit changes ». Le site se met à jour tout seul en quelques minutes.
+#
+#   Comment ça marche :
+#     == Burgers                      → un onglet de la carte
+#     -- Hors carte | les nouveautés  → un bloc (le petit texte après | est facultatif)
+#        ajoutez  | photo=img/hors.webp  pour mettre une photo en haut du bloc
+#     Sam Vegas | 12,50 € | description | nouveau
+#                                     → un plat : nom | prix | description | nouveau
+#                                       (la description et « nouveau » sont facultatifs)
+#     Tenders maison | x3 5 € ; x6 8 € ; x9 12 €
+#                                     → un plat vendu par quantité (séparez par ; )
+#     note: texte                     → une petite phrase sous le bloc
+#     tags: Coca, Fanta, Perrier      → une liste de petites étiquettes
+#
+#   Pour retirer un plat : supprimez sa ligne.
+#   Les lignes qui commencent par # ne s'affichent pas sur le site.
+#  ================================================================
+
+
+== Burgers
+
+-- Hors carte | les nouveautés | photo=img/hors.webp
+Sam Vegas | 12,50 € | Pain brioché, steak ou poulet pané, galette de pomme de terre, salade tomate oignon, sauce cheddar fondu XXL | nouveau
+Sam Chalet | 14,50 € | Raclette, 3 onion rings, pain brioché toasté, steak ou poulet pané, salade tomate oignon, sauce Big Sam maison | nouveau
+Sam Truffe | 14,50 € | Copeaux de truffe, sauce truffe maison, salade, chips de patate maison, steak ou poulet pané
+Sam Pastrami | 11,50 € | Steak ou poulet pané, 3 tranches de pastrami, triple cheddar, salade tomate oignon, sauce Big Sam maison
+Sam Signature | 10,50 € | Pain brioché toasté, poulet mariné, sésame, double cheddar, salade tomate oignon, sauce Big Sam maison | nouveau
+Croque Sam Truffe | 8,50 € | Sauce truffe maison, copeaux de truffe, double cheddar, 3 tranches de jambon de dinde (+1 € l'œuf)
+note: +1,50 € la boisson, +2,50 € la frite.
+
+-- Spécial Sam | les signatures | photo=img/spec.webp
+La Star | 10 € | Steak ou poulet pané, burrata
+L'Étoile | 10 € | Steak ou poulet pané maison, galette de pomme de terre
+Le Duo | 12 € | Poulet pané maison et steak
+Le Royal | 12 € | Poulet pané maison ou steak, œuf et jambon
+
+-- Classic | | photo=img/classic.webp
+MacSam | 8 € | Poulet pané maison
+ModeSam | 8 € | Steak ou kefta 125 g
+BigSam | 7 € | Double steak 45 g
+Cheese | 3 €
+Double Cheese | 4 €
+Triple Cheese | 6 €
+
+-- Veggie
+King | 7 € | Olive et mozza panée, ou camembert pané
+Gourmet | 8 € | Galette de pomme de terre et œuf
+L'Italien | 8 € | Oignons frits et burrata
+
+
+== Assiettes & sandwichs
+
+-- Compose ton assiette | | photo=img/assiet.webp
+1 viande | 10 €
+2 viandes | 13 €
+3 viandes | 15 €
+note: Avec frites et salade composée. Au choix : steak, kefta, brochette de poulet, poulet pané maison, omelette spéciale Sam. Curry, paprika, tandoori ou nature. Boisson +2 €.
+
+-- Sandwich | pain rond frais XXL | photo=img/sandw.webp
+Pain rond, wrap ou baguette | 9,5 €
+note: Steak 125 g, poulet pané maison, kefta 125 g, brochette de poulet ou omelette spéciale Sam. Salade, tomate, oignon et sauce maison.
+Croque Sam | 4,5 € | Jambon, sauce blanche maison, double cheddar (+1 € l'œuf)
+
+-- Salades
+Burrata | 9,5 €
+Poulet pané maison | 9,5 €
+Camembert pané | 9,5 €
+note: Salade, tomate, oignon, olive, feta, huile d'olive, balsamique. Boisson +2 €, frites fraîches +4 €.
+
+
+== Petites faims
+
+-- Petites faims | à partager | photo=img/pf.webp
+Tenders maison | x3 5 € ; x6 8 € ; x9 12 € ; x15 18 €
+Sticks mozza | x3 3 € ; x6 6 € ; x9 9 € ; x15 14 €
+Sam camembert | x3 3 € ; x6 6 € ; x9 9 € ; x15 14 €
+Nuggets | x3 3 € ; x6 6 € ; x9 8 € ; x15 14 €
+Crevettes tempura | x3 5 € ; x6 8 € ; x9 10 € | | nouveau
+
+-- Suppléments
+Sauce maison, olive, cheddar | 0,5 €
+Œuf, galette, jambon | 1 €
+Boisson | 2 €
+Frites maison, viande, burrata | 4 €
+Sauce cheddar fondu sur les frites | 1 € | | nouveau
+
+-- Sauces | 0,50 € le pot
+note: Faites maison :
+tags: Blanche, Big Sam, Chili, Cheddar, Crème truffe (2 €)
+note: Et aussi :
+tags: Harissa, Algérienne, Mayonnaise, Ketchup
+
+
+== Enfants
+
+-- Menu enfant | 1 jouet offert
+Menu enfant | 7,5 €
+note: 1 cheese, 4 nuggets, 3 tenders ou 4 sticks mozza, avec petite frite et canette.
+
+
+== Desserts & boissons
+
+-- Desserts maison | | photo=img/dess.webp
+Tiramisu Oreo | 4,5 €
+Tiramisu spéculoos | 4,5 €
+Tiramisu cookies Nutella | 4,5 €
+Muffin tout chocolat | 4,5 € | Cœur coulant et pépites de chocolat
+Glaces | 2,5 € | Cornet Extrême goût sundae, Magnum chocolat au lait
+
+-- À boire | | photo=img/bois.webp
+Soda, eau, ice tea | 2 € | 1,50 € avec un menu
+tags: Coca, Coca zéro, Orangina, Fanta orange, Oasis tropical, Ice tea pêche, Perrier, Cristaline
+Mojito maison | 3,5 € | 2,50 € avec un menu
+Café Lavazza | | Expresso, café au lait, décaféiné
+
+
+#  ================================================================
+#   HORAIRES  (jour | horaires)   écrivez « Fermé » pour un jour fermé
+#   Exemple : Mardi | 11h30 – 14h30 · 18h – 22h30
+#  ================================================================
+
+== HORAIRES
+Mardi | 11h30 – 14h30 · 18h – 22h30
+Mercredi | 11h30 – 14h30 · 18h – 22h30
+Jeudi | 11h30 – 14h30 · 18h – 22h30
+Vendredi | 11h30 – 14h30 · 18h – 22h30
+Samedi | 11h30 – 14h30 · 18h – 22h30
+Dimanche | 18h – 22h
+Lundi | Fermé
