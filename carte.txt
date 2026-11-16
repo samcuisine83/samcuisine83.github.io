@@ -6,7 +6,22 @@
 #   « Commit changes ». Le site se met à jour tout seul en quelques minutes.
 #
 #   Comment ça marche :
-#     #  ================================================================
+#     == Burgers                      → un onglet de la carte
+#     -- Hors carte | les nouveautés  → un bloc (le petit texte après | est facultatif)
+#        ajoutez  | photo=img/hors.webp  pour mettre une photo en haut du bloc
+#     Sam Vegas | 12,50 € | description | nouveau
+#                                     → un plat : nom | prix | description | nouveau
+#                                       (la description et « nouveau » sont facultatifs)
+#     Tenders maison | x3 5 € ; x6 8 € ; x9 12 €
+#                                     → un plat vendu par quantité (séparez par ; )
+#     note: texte                     → une petite phrase sous le bloc
+#     tags: Coca, Fanta, Perrier      → une liste de petites étiquettes
+#
+#   Pour retirer un plat : supprimez sa ligne.
+#   Les lignes qui commencent par # ne s'affichent pas sur le site.
+#  ================================================================
+
+#  ================================================================
 #   INFOS DU SITE   (nom : texte)   — changez seulement ce qui est après les deux-points
 #   Pour une liste, séparez par des virgules.
 #  ================================================================
@@ -29,21 +44,6 @@ paiement: Carte bancaire, espèces et tickets restaurant papier (la monnaie n'es
 
 #  ================================================================
 #   LA CARTE
-#  ================================================================
-
-== Burgers                      → un onglet de la carte
-#     -- Hors carte | les nouveautés  → un bloc (le petit texte après | est facultatif)
-#        ajoutez  | photo=img/hors.webp  pour mettre une photo en haut du bloc
-#     Sam Vegas | 12,50 € | description | nouveau
-#                                     → un plat : nom | prix | description | nouveau
-#                                       (la description et « nouveau » sont facultatifs)
-#     Tenders maison | x3 5 € ; x6 8 € ; x9 12 €
-#                                     → un plat vendu par quantité (séparez par ; )
-#     note: texte                     → une petite phrase sous le bloc
-#     tags: Coca, Fanta, Perrier      → une liste de petites étiquettes
-#
-#   Pour retirer un plat : supprimez sa ligne.
-#   Les lignes qui commencent par # ne s'affichent pas sur le site.
 #  ================================================================
 
 
