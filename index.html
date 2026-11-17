@@ -160,6 +160,9 @@ h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size
 .card h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:28px;line-height:1;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .card h3 em{font-style:normal;font-family:var(--marker);text-transform:none;color:var(--red);font-size:17px}
 .card .cover + .in{margin-top:-34px;position:relative}
+.card .cover img[src="img/assiet.webp"]{height:auto;aspect-ratio:448/452;object-position:50% 50%}
+.card .cover:has(img[src="img/assiet.webp"]):after{background:linear-gradient(transparent 82%,var(--ink2))}
+.card .cover:has(img[src="img/assiet.webp"]) + .in{margin-top:0}
 .row{display:flex;align-items:baseline;gap:10px;padding:12px 0;border-top:1px dashed #34343a}
 .card h3 + .row{border-top:0;margin-top:6px}
 .row .n{flex:none;font-weight:800;font-size:17px}
