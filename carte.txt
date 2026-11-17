@@ -109,7 +109,7 @@ Crevettes tempura | x3 5 € ; x6 8 € ; x9 10 € | | nouveau
 
 -- Suppléments
 Sauce maison, olive, cheddar | 0,5 €
-Œuf, galette, jambon | 1 €
+Œuf, galette de pomme de terre, jambon | 3 €
 Boisson | 2 €
 Frites maison, viande, burrata | 4 €
 Sauce cheddar fondu sur les frites | 1 € | | nouveau
@@ -141,7 +141,7 @@ Glaces | 2,5 € | Cornet Extrême goût sundae, Magnum chocolat au lait
 Soda, eau, ice tea | 2 € | 1,50 € avec un menu
 tags: Coca, Coca zéro, Orangina, Fanta orange, Oasis tropical, Ice tea pêche, Perrier, Cristaline
 Mojito maison | 3,5 € | 2,50 € avec un menu
-Café Lavazza | | Expresso, café au lait, décaféiné
+Café Lavazza | 2 € | Expresso, café au lait, décaféiné
 
 
 #  ================================================================
