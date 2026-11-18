@@ -136,6 +136,9 @@ h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size
 @media (min-width:860px){.gal{grid-auto-flow:row;grid-template-columns:repeat(5,1fr);grid-auto-columns:auto;overflow:visible}}
 .allerg{display:block;margin-top:8px;font-size:13.5px;color:#c9c2b6}
 .legal a{color:inherit}
+footer .dex{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+footer .dex .dexm{width:16px;height:16px;color:var(--paper);margin-left:2px}
+footer .dex b{color:var(--paper);font-weight:700}
 .galhint{color:var(--muted);font-size:13.5px;margin:10px 0 4px}
 @media (min-width:860px){.galhint{display:none}}
 .ways{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
@@ -430,7 +433,8 @@ dialog.order::backdrop{background:rgba(0,0,0,.7);backdrop-filter:blur(3px)}
     <div class="brand"><img src="img/logo.webp" alt=""><b>Sam Cuisine</b></div>
     <nav aria-label="Réseaux"><a href="https://www.instagram.com/sam_cuisine/" target="_blank" rel="noopener noreferrer">Instagram · <span data-i="abonnes_instagram">107 k</span> abonnés</a><a href="https://ig.me/m/sam_cuisine" target="_blank" rel="noopener noreferrer">Écrire à Sam</a></nav>
     <p>200 route de Fréjus, 83490 Le Muy · <span data-i="telephone">07 68 63 48 20</span></p>
-    <p class="legal"><a href="mentions-legales.html">Mentions légales et confidentialité</a> · Photos non contractuelles · Site fait par Titouan.</p>
+    <p class="legal"><a href="mentions-legales.html">Mentions légales et confidentialité</a> · Photos non contractuelles</p>
+    <p class="dex">Site réalisé par <svg class="dexm" viewBox="0 0 120 120" aria-hidden="true"><path d="M16 12H58A48 48 0 0 1 58 108H16Q12 108 12 104V16Q12 12 16 12Z" fill="currentColor"/><path d="M40 41L61 60L40 79" fill="none" stroke="var(--ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><rect x="68" y="74.5" width="22" height="10" rx="5" fill="#ff6b1f"/></svg><b>Dex Studio</b></p>
   </div>
 </footer>
 
